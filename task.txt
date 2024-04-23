@@ -1,0 +1,11 @@
+task 101 - add background color to homepage  ---santhosh
+
+task 102 - Login PAGE -remove Form from login page(currently it is Login Form  expected is Login) --subbu
+
+task 103 - in login page usertype dropdown should have select instead of usertype --venkat askhay
+
+task 104 - in the register page rename Student Registeration Form -> Student Registeration (remove the form)--peda obulesh
+             * usertype dropdown should have select intead of usertype
+			 
+			 
+task 105 - 	in login instead of invalid user/pas-->pl		 
