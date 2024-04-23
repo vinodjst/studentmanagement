@@ -66,7 +66,7 @@ public class StudentController {
         try {
             response = studentServce.login(userName, password, userType);
         } catch (Exception e) {
-            model.addAttribute("error", "Invalid UserName/Password!");
+            model.addAttribute("error", "Invalid UserName/Password! Please provide valid credentials...");
             return "login";
         }
 
