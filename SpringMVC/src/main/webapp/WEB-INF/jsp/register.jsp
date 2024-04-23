@@ -108,7 +108,7 @@ User Type :
 </label>
 
 <select name="usertype">
-<option value="usertype">userType</option>
+<option value="usertype">Select</option>
 <option value="student">Student</option>
 <option value="admin">Admin</option>
 </select>
