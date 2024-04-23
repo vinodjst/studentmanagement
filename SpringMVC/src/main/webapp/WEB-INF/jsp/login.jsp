@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+form {border: 3px solid #9efd38 | rgb(158,253,56)
+;}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -16,7 +17,9 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #04AA6D;
+  background-color: #9efd38 | rgb(158,253,56)
+
+  ;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -32,7 +35,9 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color:#9efd38 | rgb(158,253,56)
+
+  ;
 }
 
 .imgcontainer {
@@ -102,7 +107,8 @@ User Type :
     </label>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container" style="background-color:#9efd38 | rgb(158,253,56)
+">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
