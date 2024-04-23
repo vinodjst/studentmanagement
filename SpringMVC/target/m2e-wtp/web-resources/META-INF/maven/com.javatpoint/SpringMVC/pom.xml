@@ -32,7 +32,24 @@
     <groupId>javax.servlet</groupId>  
     <artifactId>servlet-api</artifactId>  
     <version>3.0-alpha-1</version>  
-</dependency>    
+</dependency>
+
+
+      <!-- spring jdbc dependency -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-jdbc</artifactId>
+          <version>5.0.2.RELEASE</version>
+      </dependency>
+
+      <!-- mysql databse connector -->
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.33</version>
+      </dependency>
+
   </dependencies>
   <build>
     <finalName>SpringMVC</finalName>

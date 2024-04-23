@@ -70,7 +70,7 @@ span.psw {
 </head>
 <body>
 
-<h2>Login Form</h2>
+<h2>Login </h2>
 
 <form action="login" method="post">
   <!--<div class="imgcontainer">
