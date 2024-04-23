@@ -90,11 +90,11 @@ span.psw {
 User Type :
 </label>
 
-<select name="usertype">
-<option value="usertype">userType</option>
-<option value="student">Student</option>
-<option value="admin">Admin</option>
-</select>
+
+<label for="usertype"></label>
+<input type="radio" id="usertype" name="usertype" value="student">Student<br>
+<input type="radio" id="usertype" name="usertype" value="admin">Admin<br>
+
 </div>
     <button type="submit">Login</button>
     <label>
