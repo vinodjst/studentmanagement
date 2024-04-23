@@ -7,7 +7,8 @@
 }
 
 .sign-data{
-background-color:wheat;
+border:1px solid black;
+border-radius:10px;
 padding:30px;
 height:200px;
 width:200px;
