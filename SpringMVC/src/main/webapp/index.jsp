@@ -12,8 +12,14 @@ border-radius:10px;
 padding:30px;
 height:200px;
 width:200px;
+background-color:#1DEA61;
 }
 
+body{
+
+ background-color:#F4F6F7;
+
+}
 </style>
 </head>
 <body>
