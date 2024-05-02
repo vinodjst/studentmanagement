@@ -44,5 +44,11 @@ public class StudentServiceImpl implements StudentServce {
         return dao.getStudentsByName(firstName);
     }
 
+    @Override
+    public String deleteStudent(int id) {
+
+        return dao.delete(id);
+    }
+
 
 }
