@@ -45,7 +45,7 @@ public class StudentDao {
 
         template.update(sql);
 
-        return "student delete";
+        return "student deleted successfully..";
     }
 
     public Student getStudentsByName(String studentName)
@@ -63,11 +63,12 @@ public class StudentDao {
     public List<Student> fetchAllStudents()
             throws SQLException {
         String sql
-                = "select * from studentdetails";
+                = "select * from studentdetails where userType='student'";
         return template.query(
                 sql, new RowMapper<Student>() {
                     public Student mapRow(ResultSet rs, int row) throws SQLException {
                         Student e = new Student();
+                        e.setId(rs.getInt(1));
                         e.setFirstname(rs.getString(2));
                         e.setMiddlename(rs.getString(3));
                         e.setLastname(rs.getString(4));

@@ -65,25 +65,27 @@ margin-top:20px;
 <nav>
 <ul>
   <li><a href="#home">Home</a></li>
-  <li><a href="#service">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a href="${pageContext.request.contextPath}/studentlist" >StudentList</a></li>
+  <li><a href="${pageContext.request.contextPath}/logout">Logout</a></li>
 </ul>
-
 </nav>
 
 <section>
 
+<p>Welcome <span style="font-size:22px;color:blue;"><i><span style="color:red">Admin</span> ${sessionScope.loguser}</i>!</span></p>
+
+
 <center>
+
 <table border="1" style="margin-top:30px;background-color:wheat">
 <tr><th>First Name</th><th>Middle Name</th><th>Last Name</th><th>Course</th><th>Gender</th><th>Country Code</th><th>Phone</th><th>Address</th><th>Email</th><th>EDIT</th><th>DELETE</th></tr>
 <c:forEach var="student" items="${studentList}">
-    <tr><td>${student.firstname}</td><td>${student.middlename}</td><td>${student.lastname}</td><td>${student.course}</td><td>${student.gender}</td><td>${student.countrycode}</td><td>${student.phone}</td><td>${student.address}</td><td>${student.email}</td></tr>
+    <tr><td>${student.firstname}</td><td>${student.middlename}</td><td>${student.lastname}</td><td>${student.course}</td><td>${student.gender}</td><td>${student.countrycode}</td><td>${student.phone}</td><td>${student.address}</td><td>${student.email}</td><td><a href="#">EDIT</a></td><td><a href="${pageContext.request.contextPath}/removeStudent/${student.id}">DELETE</a></td></tr>
 </c:forEach>
 
 
 </table>
-
+<p style="color:blue;">${deleteResponse}</p>
 </center>
 
 </section>

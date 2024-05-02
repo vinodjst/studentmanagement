@@ -17,4 +17,6 @@ public interface StudentServce {
 
     public Student getStudentByName(String firstName) throws SQLException;
 
+    public String deleteStudent(int id);
+
 }
