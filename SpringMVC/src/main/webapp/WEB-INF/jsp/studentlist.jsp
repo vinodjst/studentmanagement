@@ -50,7 +50,7 @@ margin-top:20px;
 }
 
 .editForm {
-display:none;chr
+display:none;
 
 }
 
@@ -67,7 +67,7 @@ function showRegister(id,fname,mname,lname,course,gender,countrycode,phone,addre
 
 console.log("Name :::"+name);
 
-alert("you clicked on edit....id "+name);
+
 
 var element = document.getElementsByClassName('editForm')[0];
 
@@ -82,11 +82,8 @@ document.getElementsByName("phone")[0].value =phone;
 document.getElementsByName("address")[0].value =address;
 document.getElementsByName("email")[0].value =email;
 
-
-
-console.log(element.style);
 element.style.display = "block";
-console.log(element.style);
+
 
 }
 
@@ -140,7 +137,7 @@ function fetchStudentInfoById(){
 <!--EDIR FORM-->
 
 <div class="editForm">
-<form  action="register"  method="post" modelAttribute="register">
+<form  action=""  method="post" modelAttribute="register">
 
   <center>  <h1> UPDATE STUDENT</h1> </center>
   <hr>
